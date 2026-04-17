@@ -3,154 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Estadística Interactiva | Combinaciones Café y Azúcar</title>
-<!-- Favicon - Escudo Universidad de Antioquia -->
-<link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Escudo-UdeA.svg/500px-Escudo-UdeA.svg.png">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <title>Estadística Interactiva | Café + Azúcar | Gran Animación Azúcar Cayendo</title>
+    <!-- Favicon - Escudo Universidad de Antioquia -->
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Escudo-UdeA.svg/500px-Escudo-UdeA.svg.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #faf7f0 0%, #f5efe5 100%);
+        body {
+            font-family: 'Inter', 'Poppins', sans-serif;
+            background: radial-gradient(circle at 10% 30%, #e8d5bc, #c8b68f);
             min-height: 100vh;
             padding: 2rem 1.5rem;
         }
 
-        /* Contenedor principal */
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
-        /* ========== SECCIÓN DE EXPLICACIÓN - GRANDE, CLARA, VISUAL ========== */
+        /* ========== SECCIÓN DE EXPLICACIÓN ========== */
         .explicacion-card {
-            background: linear-gradient(135deg, #ffffff 0%, #fffbf5 100%);
-            border-radius: 2rem;
-            padding: 2rem 2rem 2rem 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
-            border: 1px solid #f0e2d0;
+            background: linear-gradient(145deg, #fffaf0, #fef3e4);
+            border-radius: 2.5rem;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 30px 40px -15px rgba(0, 0, 0, 0.3);
+            border: 1px solid #ecd9c2;
         }
 
         .explicacion-titulo {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 800;
-            color: #8b5a3a;
+            background: linear-gradient(135deg, #a45d2e, #6f3e1c);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
             text-align: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.8rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
+            gap: 15px;
             flex-wrap: wrap;
         }
 
-        .explicacion-titulo span {
-            font-size: 2.2rem;
-        }
-
         .principio-box {
-            background: #f9f0e4;
-            border-radius: 1.5rem;
+            background: #f8efe3;
+            border-radius: 2rem;
             padding: 1.8rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.8rem;
             text-align: center;
-            border-left: 8px solid #c28a5c;
-            border-right: 8px solid #c28a5c;
+            border-left: 8px solid #d99e5e;
+            border-right: 8px solid #d99e5e;
         }
 
         .principio-texto {
-            font-size: 1.4rem;
-            line-height: 1.6;
-            color: #2c241c;
-            margin-bottom: 1.2rem;
+            font-size: 1.3rem;
+            line-height: 1.5;
+            color: #2a241e;
             font-weight: 500;
         }
 
         .formula-destacada {
-            background: #c28a5c;
+            background: #c97e4a;
             color: white;
             display: inline-block;
             padding: 0.4rem 1.2rem;
             border-radius: 60px;
-            font-family: 'Courier New', monospace;
+            font-family: monospace;
             font-weight: bold;
             font-size: 1.6rem;
-            margin: 0 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin: 0 6px;
+            box-shadow: 0 6px 0 #754c2c;
         }
 
         .formula-grande {
             background: #2c5a3e;
-            color: #fff5e6;
-            padding: 0.6rem 1.5rem;
-            border-radius: 60px;
-            font-size: 1.8rem;
+            color: #fef0e0;
+            padding: 0.7rem 1.8rem;
+            border-radius: 80px;
+            font-size: 2rem;
             font-weight: bold;
             display: inline-block;
             margin: 0.8rem 0;
             font-family: monospace;
-            letter-spacing: 2px;
+            box-shadow: 0 8px 0 #1d3e2a;
         }
 
         .resultado-final {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-weight: 800;
-            color: #fff;
-            background: #8b5a3a;
+            background: #946b48;
             display: inline-block;
-            padding: 0.6rem 1.8rem;
+            padding: 0.7rem 2rem;
             border-radius: 60px;
-            margin-top: 0.8rem;
-            box-shadow: 0 6px 0 #5a3a24;
+            box-shadow: 0 7px 0 #5a3a24;
+            color: white;
         }
 
-        .cafes-lista {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            margin: 1.5rem 0;
-        }
-
-        .badge-cafe {
-            background: #e8dccc;
-            padding: 0.5rem 1.2rem;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 1rem;
-            color: #5a3a24;
-        }
-
-        /* ========== SECCIÓN INTERACTIVA ========== */
+        /* ========== OPCIONES CON TAZAS Y AZÚCAR MÁS GRANDES ========== */
         .interactivo-card {
-            background: #ffffff;
+            background: rgba(255, 248, 235, 0.96);
             border-radius: 2rem;
             padding: 2rem;
             margin-bottom: 2rem;
-            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
-            border: 1px solid #e9ddcf;
+            box-shadow: 0 25px 40px -12px rgba(0,0,0,0.3);
+            border: 1px solid #f0e0ce;
         }
 
         .interactivo-titulo {
-            font-size: 1.6rem;
+            font-size: 1.7rem;
             font-weight: 700;
-            color: #6b4c34;
-            margin-bottom: 1.5rem;
+            background: linear-gradient(145deg, #7b583d, #9c6e48);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 1.8rem;
             display: flex;
             align-items: center;
-            gap: 10px;
-            border-left: 5px solid #c28a5c;
-            padding-left: 1rem;
+            gap: 12px;
+            border-left: 6px solid #d99e5e;
+            padding-left: 1.2rem;
         }
 
-        /* Opciones */
         .opciones-grid {
             display: flex;
             flex-wrap: wrap;
@@ -160,23 +141,23 @@ font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Poppins', sans-seri
 
         .opcion-card {
             flex: 1;
-            min-width: 240px;
-            background: #fef9f2;
-            border-radius: 1.5rem;
-            padding: 1.5rem;
+            min-width: 300px;
+            background: #fff9f2;
+            border-radius: 1.8rem;
+            padding: 1.6rem;
             text-align: center;
-            transition: all 0.2s;
-            border: 1px solid #e9ddcf;
+            transition: all 0.25s ease;
+            box-shadow: 0 12px 18px -8px rgba(0,0,0,0.2);
+            border: 1px solid #eedbc8;
         }
 
         .opcion-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 20px -8px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
         }
 
         .opcion-card h3 {
             font-size: 1.6rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
             color: #8b5a3a;
         }
 
@@ -184,78 +165,252 @@ font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Poppins', sans-seri
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 12px;
+            gap: 25px;
         }
 
-        .btn-cafe, .btn-azucar {
-            background: #fff5ea;
-            border: 2px solid #e2cfbb;
-            padding: 0.7rem 1.3rem;
-            border-radius: 60px;
-            font-weight: 600;
-            font-size: 0.95rem;
+        .btn-cafe {
+            background: #f5e8da;
+            border: 3px solid #e2cfbb;
+            border-radius: 1.5rem;
+            padding: 1rem 1.5rem;
             cursor: pointer;
-            transition: all 0.2s ease;
-            font-family: inherit;
-            color: #4f351f;
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            min-width: 130px;
         }
 
-        .btn-cafe:hover, .btn-azucar:hover {
-            background: #e8dccc;
+        .btn-cafe:hover {
+            background: #f0dfcc;
             transform: scale(1.02);
             border-color: #c28a5c;
         }
 
-        .btn-cafe.active, .btn-azucar.active {
+        .btn-cafe.active {
             background: #c28a5c;
             border-color: #8b5a3a;
             color: white;
-            box-shadow: 0 4px 10px rgba(194,138,92,0.3);
+            box-shadow: 0 6px 0 #7b4e2e;
         }
 
-        /* Panel selección actual */
-        .panel-actual {
-            background: #fef5e8;
-            border-radius: 1.2rem;
+        .btn-cafe .taza-mini svg {
+            width: 70px;
+            height: 70px;
+        }
+
+        .btn-cafe span {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .btn-azucar {
+            background: #f5e8da;
+            border: 3px solid #e2cfbb;
+            border-radius: 1.5rem;
             padding: 1rem 1.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            min-width: 130px;
+        }
+
+        .btn-azucar:hover {
+            background: #f0dfcc;
+            transform: scale(1.02);
+            border-color: #c28a5c;
+        }
+
+        .btn-azucar.active {
+            background: #c28a5c;
+            border-color: #8b5a3a;
+            color: white;
+        }
+
+        .btn-azucar .azucar-mini svg {
+            width: 65px;
+            height: 65px;
+        }
+
+        .btn-azucar span {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        /* Panel de animación - MÁS GRANDE */
+        .animation-panel {
+            background: #faf0e4;
+            border-radius: 2rem;
+            padding: 2rem;
             margin: 1.5rem 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 1rem;
-            border: 1px solid #e2cfbb;
+            gap: 2rem;
+            border: 2px solid #e9cfb5;
         }
 
-        .seleccion-badge {
-            background: #fff;
-            padding: 0.5rem 1.2rem;
-            border-radius: 60px;
-            font-weight: 600;
-            font-size: 1rem;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        .preview-area {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            background: #fff8f0;
+            padding: 1.5rem 3rem;
+            border-radius: 2.5rem;
+            position: relative;
+            min-width: 450px;
+            justify-content: center;
         }
 
-        .seleccion-badge span {
-            color: #c28a5c;
-            font-size: 1.1rem;
+        .preview-taza {
+            position: relative;
+            display: inline-block;
+        }
+
+        .preview-taza svg {
+            width: 130px;
+            height: 130px;
+        }
+
+        .preview-azucar {
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .preview-azucar svg {
+            width: 110px;
+            height: 110px;
+        }
+
+        .preview-area > div:nth-child(2) {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #8b5a3a;
+        }
+
+        /* Animación inclinar sobre - MÁS DRAMÁTICA */
+        @keyframes inclinarVertido {
+            0% { transform: rotate(0deg) translateX(0); }
+            15% { transform: rotate(-18deg) translateX(-8px) translateY(5px); }
+            40% { transform: rotate(-32deg) translateX(-18px) translateY(12px); }
+            70% { transform: rotate(-28deg) translateX(-14px) translateY(8px); }
+            100% { transform: rotate(0deg) translateX(0); }
+        }
+
+        .inclinar-azucar {
+            animation: inclinarVertido 0.7s ease-in-out;
+        }
+
+        /* Sacudir taza */
+        @keyframes sacudirTaza {
+            0% { transform: translate(0, 0); }
+            20% { transform: translate(5px, -3px) rotate(2deg); }
+            40% { transform: translate(-5px, 2px) rotate(-2deg); }
+            60% { transform: translate(3px, -2px) rotate(1deg); }
+            80% { transform: translate(-2px, 1px) rotate(-1deg); }
+            100% { transform: translate(0, 0); }
+        }
+
+        .taza-sacudiendo {
+            animation: sacudirTaza 0.5s ease-in-out;
+        }
+
+        /* PARTÍCULAS DE AZÚCAR - MÁS GRANDES Y VISIBLES */
+        .particula-azucar {
+            position: fixed;
+            pointer-events: none;
+            z-index: 10000;
+            border-radius: 50%;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+            animation: caerEnTaza 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+        }
+
+        .particula-azucar.blanco {
+            background: radial-gradient(circle at 30% 30%, #fff8e8, #f5e6c4);
+            border: 2px solid #e8d4a8;
+            width: 14px;
+            height: 14px;
+        }
+
+        .particula-azucar.moreno {
+            background: radial-gradient(circle at 30% 30%, #e8c894, #c49a5c);
+            border: 2px solid #a87d4a;
+            width: 13px;
+            height: 13px;
+        }
+
+        .particula-azucar.medium {
+            width: 10px;
+            height: 10px;
+        }
+
+        .particula-azucar.small {
+            width: 7px;
+            height: 7px;
+        }
+
+        @keyframes caerEnTaza {
+            0% {
+                transform: translate(0, 0) scale(1) rotate(0deg);
+                opacity: 1;
+            }
+            25% {
+                transform: translate(calc(var(--dx) * 0.35), calc(var(--dy) * 0.25)) scale(0.9) rotate(15deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(calc(var(--dx) * 0.7), calc(var(--dy) * 0.6)) scale(0.6) rotate(40deg);
+                opacity: 0.95;
+            }
+            100% {
+                transform: translate(var(--dx), var(--dy)) scale(0.1) rotate(90deg);
+                opacity: 0;
+            }
+        }
+
+        /* Brillo en la taza */
+        @keyframes brilloAzucar {
+            0% { filter: brightness(1); }
+            50% { filter: brightness(1.25); }
+            100% { filter: brightness(1); }
+        }
+
+        .taza-brillo {
+            animation: brilloAzucar 0.4s ease-in-out;
+        }
+
+        /* Onda expansiva */
+        @keyframes ondaAzucar {
+            0% { box-shadow: 0 0 0 0 rgba(198, 138, 92, 0.5); }
+            100% { box-shadow: 0 0 0 35px rgba(198, 138, 92, 0); }
+        }
+
+        .onda-taza {
+            animation: ondaAzucar 0.6s ease-out;
         }
 
         .btn-primario {
             background: #6f9e7c;
             border: none;
-            padding: 0.7rem 1.5rem;
+            padding: 1rem 2.2rem;
             border-radius: 60px;
             font-weight: bold;
             color: white;
             cursor: pointer;
-            font-size: 0.9rem;
-            transition: 0.2s;
+            font-size: 1.1rem;
+            transition: 0.15s;
+            box-shadow: 0 5px 0 #3c6448;
         }
 
         .btn-primario:hover:not(:disabled) {
-            background: #54835f;
-            transform: scale(0.98);
+            background: #588b66;
+            transform: translateY(-2px);
+            box-shadow: 0 7px 0 #3c6448;
         }
 
         .btn-primario:disabled {
@@ -266,66 +421,83 @@ font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Poppins', sans-seri
         .btn-secundario {
             background: #e0cfbb;
             border: none;
-            padding: 0.6rem 1.2rem;
+            padding: 0.8rem 1.6rem;
             border-radius: 60px;
             font-weight: 600;
             cursor: pointer;
-            transition: 0.2s;
+            font-size: 1rem;
         }
 
         .btn-secundario:hover {
-            background: #d0bea6;
+            background: #d2bea4;
         }
 
-        /* Lista de combinaciones */
         .combinaciones-lista {
-            background: #fefaf5;
-            border-radius: 1.2rem;
-            margin-top: 1.5rem;
-            overflow: hidden;
-            border: 1px solid #e9ddcf;
+            background: #fffcf5;
+            border-radius: 1.6rem;
+            margin-top: 1.8rem;
+            border: 1px solid #eddccb;
         }
 
         .lista-header {
-            background: #f5ede2;
-            padding: 1rem 1.5rem;
+            background: #f3e7db;
+            padding: 1rem 1.8rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 1.1rem;
         }
 
         .combo-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 12px;
-            padding: 1.5rem;
-            min-height: 120px;
+            gap: 18px;
+            padding: 1.8rem;
+            min-height: 180px;
         }
 
         .combo-item {
-            background: white;
+            background: linear-gradient(145deg, #ffffff, #faf1e4);
             border-radius: 1.2rem;
-            padding: 0.6rem 1.2rem;
-            font-weight: 500;
-            display: inline-flex;
+            padding: 0.8rem 1.2rem;
+            display: flex;
             align-items: center;
-            gap: 12px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-            border-left: 5px solid #c28a5c;
+            gap: 15px;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+            border: 1px solid #eedbc2;
+        }
+
+        .combo-visual {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #f7efe5;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+        }
+
+        .combo-visual svg {
+            width: 45px;
+            height: 45px;
+        }
+
+        .combo-texto {
+            font-weight: 600;
+            color: #5c3d27;
+            font-size: 1rem;
         }
 
         .btn-eliminar {
-            background: #f0e2d0;
+            background: #e9d9ca;
             border: none;
-            width: 24px;
-            height: 24px;
+            width: 30px;
+            height: 30px;
             border-radius: 30px;
             cursor: pointer;
             font-weight: bold;
-            color: #a1451e;
-            transition: 0.1s;
+            font-size: 1rem;
         }
 
         .btn-eliminar:hover {
@@ -334,327 +506,390 @@ font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Poppins', sans-seri
         }
 
         .contador {
-            padding: 0.8rem 1.5rem;
+            padding: 1rem 1.8rem;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            border-top: 1px solid #e2cfbb;
-            font-weight: 600;
-            background: #fffbf5;
+            border-top: 1px solid #eddccb;
+            font-weight: 700;
+            font-size: 1.1rem;
         }
 
-        /* Footer con escudo BIEN VISIBLE */
         .footer {
-            background: #f5efe5;
-            border-radius: 1.5rem;
-            padding: 1.2rem 2rem;
+            background: #ebdfcf;
+            border-radius: 2rem;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 1rem;
-            border: 1px solid #e2cfbb;
             margin-top: 1rem;
-        }
-
-        .footer-texto {
-            font-weight: 600;
-            color: #6b4c34;
-            font-size: 1rem;
         }
 
         .escudo-container {
             display: flex;
             align-items: center;
-            gap: 15px;
-            background: #ffffff;
-            padding: 0.4rem 1.2rem 0.4rem 0.8rem;
+            gap: 12px;
+            background: white;
+            padding: 0.3rem 1rem;
             border-radius: 60px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
         .escudo-container img {
-            width: 55px;
+            width: 52px;
             height: auto;
-            display: block;
         }
 
-        .escudo-container span {
+        .mensaje-flotante {
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2c5a3e;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 60px;
             font-weight: 600;
-            color: #2f5e3a;
-            font-size: 0.95rem;
+            z-index: 10000;
+            animation: fadeOutMsg 2.2s forwards;
+            pointer-events: none;
+            font-size: 1.1rem;
+            white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
-        @media (max-width: 700px) {
-            body {
+        @keyframes fadeOutMsg {
+            0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+            70% { opacity: 1; }
+            100% { opacity: 0; transform: translateX(-50%) translateY(-25px); visibility: hidden; }
+        }
+
+        @media (max-width: 800px) {
+            .preview-area {
+                min-width: auto;
                 padding: 1rem;
+                gap: 20px;
             }
-            .explicacion-texto {
-                font-size: 1.1rem;
+            .preview-taza svg {
+                width: 90px;
+                height: 90px;
             }
-            .formula-destacada {
-                font-size: 1.2rem;
-                padding: 0.2rem 0.8rem;
+            .preview-azucar svg {
+                width: 75px;
+                height: 75px;
             }
-            .resultado-final {
-                font-size: 1.2rem;
+            .btn-cafe .taza-mini svg {
+                width: 55px;
+                height: 55px;
+            }
+            .btn-azucar .azucar-mini svg {
+                width: 50px;
+                height: 50px;
             }
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <!-- ========== PRIMERO: EXPLICACIÓN CLARA Y GRANDE ========== -->
+    <!-- EXPLICACIÓN PRINCIPAL -->
     <div class="explicacion-card">
         <div class="explicacion-titulo">
-            <span>📊</span> 5)	Un café internet ofrece tres tipos de café: espresso, cappuccino y latte; además, dos tipos de azúcar: blanco y moreno. ¿De cuántas formas puede un cliente elegir un café con azúcar? <span>☕🍬</span>
+            <span>📊</span> 5) Un café internet ofrece tres tipos de café: espresso, cappuccino y latte; además, dos tipos de azúcar: blanco y moreno. ¿De cuántas formas puede un cliente elegir un café con azúcar? <span>☕🍬</span>
         </div>
         
         <div class="principio-box">
-            <div class="principio-texto">
-                <strong>✨ Principio Fundamental del Conteo (Multiplicación) ✨</strong>
-            </div>
-            <div class="principio-texto">
-                Si una decisión tiene <strong class="formula-destacada">m</strong> opciones 
-                y otra decisión independiente tiene <strong class="formula-destacada">n</strong> opciones,
-                <br>el número total de combinaciones posibles es:
-            </div>
-            <div>
-                <span class="formula-grande">m × n</span>
-            </div>
+            <div class="principio-texto"><strong>✨ Principio Fundamental del Conteo (Multiplicación) ✨</strong></div>
+            <div class="principio-texto">Si una decisión tiene <strong class="formula-destacada">m</strong> opciones y otra decisión independiente tiene <strong class="formula-destacada">n</strong> opciones, el número total de combinaciones posibles es:</div>
+            <div><span class="formula-grande">m × n</span></div>
         </div>
 
         <div class="principio-box" style="background: #fff5e8;">
-            <div class="principio-texto">
-                📌 <strong>Aplicado a nuestro problema:</strong>
+            <div class="principio-texto">📌 <strong>Aplicado a nuestro problema:</strong></div>
+            <div style="display: flex; justify-content: center; gap: 1rem; margin: 1rem 0; flex-wrap: wrap;">
+                <span style="background:#e8dccc; padding:0.4rem 1rem; border-radius:40px;">☕ Espresso</span>
+                <span style="background:#e8dccc; padding:0.4rem 1rem; border-radius:40px;">☕ Cappuccino</span>
+                <span style="background:#e8dccc; padding:0.4rem 1rem; border-radius:40px;">☕ Latte</span>
+                <span>→ 3 tipos</span>
             </div>
-            <div class="cafes-lista">
-                <span class="badge-cafe">☕ Espresso</span>
-                <span class="badge-cafe">☕ Cappuccino</span>
-                <span class="badge-cafe">☕ Latte</span>
-                <span style="font-size: 1.5rem;">→ 3 tipos de café</span>
+            <div style="display: flex; justify-content: center; gap: 1rem; margin: 1rem 0; flex-wrap: wrap;">
+                <span style="background:#e8dccc; padding:0.4rem 1rem; border-radius:40px;">🍬 Azúcar Blanco</span>
+                <span style="background:#e8dccc; padding:0.4rem 1rem; border-radius:40px;">🍬 Azúcar Moreno</span>
+                <span>→ 2 tipos</span>
             </div>
-            <div class="cafes-lista">
-                <span class="badge-cafe">🍬 Azúcar Blanco</span>
-                <span class="badge-cafe">🍬 Azúcar Moreno</span>
-                <span style="font-size: 1.5rem;">→ 2 tipos de azúcar</span>
-            </div>
-            <div style="margin: 1rem 0;">
-                <span class="formula-destacada" style="background: #6f9e7c;">3 cafés</span>
-                <span style="font-size: 2rem; font-weight: bold;"> × </span>
-                <span class="formula-destacada" style="background: #6f9e7c;">2 azúcares</span>
-                <span style="font-size: 2rem; font-weight: bold;"> = </span>
-                <span class="resultado-final">6 formas distintas</span>
-            </div>
-            <div class="principio-texto" style="margin-top: 0.5rem; font-size: 1.1rem;">
-                🎯 <strong>¡Exacto! Un cliente puede elegir entre 6 combinaciones únicas de café con azúcar.</strong>
-            </div>
-        </div>
-        
-        <div style="text-align: center; font-size: 0.95rem; color: #8b7355; margin-top: 0.5rem;">
-            💡 Abajo puedes construir todas las combinaciones una por una y comprobarlo tú mismo
+            <div><span class="formula-destacada" style="background: #6f9e7c;">3 cafés</span> × <span class="formula-destacada" style="background: #6f9e7c;">2 azúcares</span> = <span class="resultado-final">6 formas distintas</span></div>
+            <div class="principio-texto" style="margin-top: 0.5rem;">🎯 <strong>¡Exacto! Un cliente puede elegir entre 6 combinaciones únicas.</strong></div>
         </div>
     </div>
 
-    <!-- ========== SEGUNDO: PARTE INTERACTIVA (SELECCIONES) ========== -->
+    <!-- INTERACTIVO CON ANIMACIÓN GRANDE -->
     <div class="interactivo-card">
         <div class="interactivo-titulo">
-            🎮 Construye tus propias combinaciones
+            🎬 Elige tu café y azúcar → ¡Mira el AZÚCAR CAER GRANDE dentro de la taza!
         </div>
 
-        <!-- Opciones de selección -->
         <div class="opciones-grid">
             <div class="opcion-card">
-                <h3>☕ Tipo de Café</h3>
-                <div class="btn-grupo" id="cafeGroup">
-                    <button data-cafe="Espresso" class="btn-cafe">Espresso</button>
-                    <button data-cafe="Cappuccino" class="btn-cafe">Cappuccino</button>
-                    <button data-cafe="Latte" class="btn-cafe">Latte</button>
-                </div>
+                <h3>☕ Selecciona tu Café</h3>
+                <div class="btn-grupo" id="cafeGroup"></div>
             </div>
             <div class="opcion-card">
-                <h3>🍬 Tipo de Azúcar</h3>
-                <div class="btn-grupo" id="azucarGroup">
-                    <button data-azucar="Blanco" class="btn-azucar">Azúcar Blanco</button>
-                    <button data-azucar="Moreno" class="btn-azucar">Azúcar Moreno</button>
-                </div>
+                <h3>🍬 Selecciona tu Azúcar</h3>
+                <div class="btn-grupo" id="azucarGroup"></div>
             </div>
         </div>
 
-        <!-- Panel de selección actual -->
-        <div class="panel-actual">
-            <div class="seleccion-badge">
-                🧪 Tu elección actual: <strong><span id="previewText">—</span></strong>
+        <!-- Área de animación GRANDE -->
+        <div class="animation-panel">
+            <div class="preview-area" id="previewArea">
+                <div class="preview-taza" id="previewTaza"></div>
+                <div style="font-size: 3rem; font-weight: bold;">+</div>
+                <div class="preview-azucar" id="previewAzucar"></div>
             </div>
-            <div style="display: flex; gap: 10px;">
-                <button id="addBtn" class="btn-primario" disabled>➕ Agregar combinación</button>
-                <button id="clearBtn" class="btn-secundario">🗑️ Limpiar selección</button>
+            <div style="display: flex; gap: 15px;">
+                <button id="addBtn" class="btn-primario" disabled>✨ Agregar combinación ✨</button>
+                <button id="clearBtn" class="btn-secundario">🗑️ Limpiar</button>
             </div>
         </div>
 
-        <!-- Lista de combinaciones creadas -->
         <div class="combinaciones-lista">
             <div class="lista-header">
-                <span>📋 Mis combinaciones creadas</span>
-                <button id="resetAllBtn" class="btn-secundario" style="background: #e0cfbb;">⟳ Reiniciar todas</button>
+                <span>📋 Combinaciones creadas (con azúcar añadido)</span>
+                <button id="resetAllBtn" class="btn-secundario">⟳ Reiniciar todas</button>
             </div>
             <div id="combosContainer" class="combo-grid">
-                <div style="color: #b28b65; width: 100%; text-align: center; padding: 1rem;">
-                    ✨ Aún no has agregado ninguna combinación. Selecciona café y azúcar arriba.
-                </div>
+                <div style="color: #b28b65; width: 100%; text-align: center; padding: 1rem;">✨ Selecciona café y azúcar, luego haz clic en "Agregar" para ver el AZÚCAR CAER GRANDE dentro ✨</div>
             </div>
             <div class="contador">
-                <span>📊 Combinaciones únicas registradas: <strong id="counter">0</strong> / 6</span>
+                <span>📊 Combinaciones únicas: <strong id="counter">0</strong> / 6</span>
             </div>
         </div>
     </div>
 
-    <!-- ========== FOOTER CON ESCUDO BIEN VISIBLE (COLORES CLAROS) ========== -->
     <div class="footer">
-        <div class="footer-texto">
-            ✨ Diseñado por estudiantes del curso Seminario de la Estadística ✨
-        </div>
+        <div class="footer-texto">✨ Diseñado por estudiantes del curso Seminario de la Estadística ✨</div>
         <div class="escudo-container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Escudo-UdeA.svg/500px-Escudo-UdeA.svg.png" 
-                 alt="Escudo Universidad de Antioquia"
-                 style="width: 52px; height: auto;"
-                 onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/f/fb/Escudo-UdeA.svg';">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Escudo-UdeA.svg/500px-Escudo-UdeA.svg.png" alt="Escudo UdeA">
             <span>Universidad de Antioquia<br>UdeA</span>
         </div>
     </div>
 </div>
 
 <script>
-    // Datos
-    const CAFES = ['Espresso', 'Cappuccino', 'Latte'];
-    const AZUCARES = ['Blanco', 'Moreno'];
-    
+    // SVG de tazas - VERSIÓN GRANDE
+    const tazasSVG = {
+        Espresso: `<svg viewBox="0 0 60 60" width="130" height="130"><rect x="14" y="22" width="32" height="26" rx="6" fill="#A86F47" stroke="#5C3A22" stroke-width="2"/><path d="M46 28 L54 28 A5 5 0 0 1 54 38 L46 38" fill="none" stroke="#5C3A22" stroke-width="2.5"/><ellipse cx="30" cy="22" rx="16" ry="5" fill="#D9A066" stroke="#5C3A22" stroke-width="1.5"/><circle cx="22" cy="34" r="3" fill="#4A2A14"/><circle cx="38" cy="34" r="3" fill="#4A2A14"/><text x="26" y="20" font-size="8" fill="#FFF">☕</text></svg>`,
+        Cappuccino: `<svg viewBox="0 0 60 60" width="130" height="130"><rect x="12" y="20" width="34" height="28" rx="7" fill="#C98F5E" stroke="#684A2C" stroke-width="2"/><path d="M46 26 L54 26 A5 5 0 0 1 54 36 L46 36" fill="none" stroke="#684A2C" stroke-width="2.5"/><ellipse cx="29" cy="20" rx="17" ry="6" fill="#F5E2C0" stroke="#B87A48" stroke-width="1.5"/><path d="M19 30 Q29 38 39 30" fill="none" stroke="#AD6D3E" stroke-width="2"/><circle cx="29" cy="35" r="2.5" fill="#8B5838"/><text x="24" y="18" font-size="9" fill="#CA9A6E">♥</text></svg>`,
+        Latte: `<svg viewBox="0 0 60 60" width="130" height="130"><rect x="13" y="21" width="33" height="27" rx="6" fill="#DCAF7C" stroke="#684A2C" stroke-width="2"/><path d="M46 27 L53 27 A4 4 0 0 1 53 35 L46 35" fill="none" stroke="#684A2C" stroke-width="2.5"/><ellipse cx="29.5" cy="21" rx="16.5" ry="5" fill="#FFF0DA" stroke="#C08651" stroke-width="1.5"/><path d="M20 30 L39 30" stroke="#B97A47" stroke-width="2" stroke-dasharray="3 2"/><circle cx="29.5" cy="36" r="3" fill="#AA6E42"/><text x="27" y="19" font-size="7" fill="#D9A163">❄</text></svg>`
+    };
+
+    const azucaresSVG = {
+        Blanco: `<svg viewBox="0 0 50 50" width="110" height="110"><rect x="8" y="14" width="34" height="24" rx="4" fill="#FFFCF0" stroke="#D9B48B" stroke-width="2"/><path d="M12 18 L25 28 L38 18" fill="none" stroke="#D9B48B" stroke-width="2"/><text x="18" y="30" font-size="10" fill="#B87C4E">✦</text><circle cx="25" cy="23" r="2.5" fill="#F7E5C2"/><text x="13" y="12" font-size="7" fill="#C59365">BLANCO</text></svg>`,
+        Moreno: `<svg viewBox="0 0 50 50" width="110" height="110"><rect x="8" y="14" width="34" height="24" rx="4" fill="#F7E8D4" stroke="#A56B3A" stroke-width="2"/><path d="M12 18 L25 28 L38 18" fill="none" stroke="#A56B3A" stroke-width="2"/><text x="18" y="30" font-size="10" fill="#A25E30">❋</text><circle cx="25" cy="23" r="2.5" fill="#D9AF85"/><text x="11" y="12" font-size="7" fill="#A56B3A">MORENO</text></svg>`
+    };
+
     let selectedCafe = null;
     let selectedAzucar = null;
-    let userCombos = []; // { cafe, azucar, texto }
+    let userCombos = [];
 
-    // DOM
-    const cafeBtns = document.querySelectorAll('[data-cafe]');
-    const azucarBtns = document.querySelectorAll('[data-azucar]');
-    const previewSpan = document.getElementById('previewText');
+    const cafeGroup = document.getElementById('cafeGroup');
+    const azucarGroup = document.getElementById('azucarGroup');
+    const previewTazaDiv = document.getElementById('previewTaza');
+    const previewAzucarDiv = document.getElementById('previewAzucar');
     const addBtn = document.getElementById('addBtn');
     const clearBtn = document.getElementById('clearBtn');
     const resetAllBtn = document.getElementById('resetAllBtn');
     const combosContainer = document.getElementById('combosContainer');
     const counterSpan = document.getElementById('counter');
 
-    function comboTexto(cafe, azucar) {
-        return `${cafe} con azúcar ${azucar}`;
-    }
-
-    function comboExiste(cafe, azucar) {
-        return userCombos.some(c => c.cafe === cafe && c.azucar === azucar);
-    }
-
-    function renderizarCombos() {
-        combosContainer.innerHTML = '';
-        if (userCombos.length === 0) {
-            combosContainer.innerHTML = '<div style="color: #b28b65; width: 100%; text-align: center; padding: 1rem;">✨ Aún no has agregado ninguna combinación. Selecciona café y azúcar arriba.</div>';
-            counterSpan.innerText = '0';
-            return;
-        }
-        userCombos.forEach((combo, idx) => {
-            const comboDiv = document.createElement('div');
-            comboDiv.className = 'combo-item';
-            comboDiv.innerHTML = `
-                ${combo.texto}
-                <button class="btn-eliminar" data-idx="${idx}" title="Eliminar">✕</button>
-            `;
-            combosContainer.appendChild(comboDiv);
-        });
-        counterSpan.innerText = userCombos.length;
-        
-        // Eventos eliminar
-        document.querySelectorAll('.btn-eliminar').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                const idx = parseInt(btn.getAttribute('data-idx'), 10);
-                if (!isNaN(idx) && idx >= 0 && idx < userCombos.length) {
-                    userCombos.splice(idx, 1);
-                    renderizarCombos();
-                    actualizarBotonAgregar();
-                }
+    function crearBotonesCafe() {
+        cafeGroup.innerHTML = '';
+        for (const [cafe, svg] of Object.entries(tazasSVG)) {
+            const btn = document.createElement('button');
+            btn.className = 'btn-cafe';
+            btn.setAttribute('data-cafe', cafe);
+            btn.innerHTML = `<div class="taza-mini">${svg}</div><span>${cafe}</span>`;
+            btn.addEventListener('click', () => {
+                selectedCafe = (selectedCafe === cafe) ? null : cafe;
+                actualizarUI();
             });
-        });
-    }
-
-    function actualizarEstilosActivos() {
-        cafeBtns.forEach(btn => {
-            const val = btn.getAttribute('data-cafe');
-            if (selectedCafe === val) btn.classList.add('active');
-            else btn.classList.remove('active');
-        });
-        azucarBtns.forEach(btn => {
-            const val = btn.getAttribute('data-azucar');
-            if (selectedAzucar === val) btn.classList.add('active');
-            else btn.classList.remove('active');
-        });
-    }
-
-    function actualizarPreviewYBoton() {
-        if (selectedCafe && selectedAzucar) {
-            previewSpan.innerHTML = `${selectedCafe} + ${selectedAzucar}`;
-            addBtn.disabled = false;
-        } else if (selectedCafe && !selectedAzucar) {
-            previewSpan.innerHTML = `${selectedCafe} + [elige azúcar]`;
-            addBtn.disabled = true;
-        } else if (!selectedCafe && selectedAzucar) {
-            previewSpan.innerHTML = `[elige café] + ${selectedAzucar}`;
-            addBtn.disabled = true;
-        } else {
-            previewSpan.innerHTML = '—';
-            addBtn.disabled = true;
+            cafeGroup.appendChild(btn);
         }
     }
 
-    function actualizarBotonAgregar() {
-        if (selectedCafe && selectedAzucar) addBtn.disabled = false;
-        else addBtn.disabled = true;
+    function crearBotonesAzucar() {
+        azucarGroup.innerHTML = '';
+        for (const [azucar, svg] of Object.entries(azucaresSVG)) {
+            const btn = document.createElement('button');
+            btn.className = 'btn-azucar';
+            btn.setAttribute('data-azucar', azucar);
+            btn.innerHTML = `<div class="azucar-mini">${svg}</div><span>Azúcar ${azucar}</span>`;
+            btn.addEventListener('click', () => {
+                selectedAzucar = (selectedAzucar === azucar) ? null : azucar;
+                actualizarUI();
+            });
+            azucarGroup.appendChild(btn);
+        }
     }
 
-    function limpiarSeleccion() {
-        selectedCafe = null;
-        selectedAzucar = null;
-        actualizarEstilosActivos();
-        actualizarPreviewYBoton();
+    function actualizarUI() {
+        document.querySelectorAll('.btn-cafe').forEach(btn => {
+            if (btn.getAttribute('data-cafe') === selectedCafe) btn.classList.add('active');
+            else btn.classList.remove('active');
+        });
+        document.querySelectorAll('.btn-azucar').forEach(btn => {
+            if (btn.getAttribute('data-azucar') === selectedAzucar) btn.classList.add('active');
+            else btn.classList.remove('active');
+        });
+
+        if (selectedCafe) previewTazaDiv.innerHTML = tazasSVG[selectedCafe];
+        else previewTazaDiv.innerHTML = `<div style="width:130px; height:130px; display:flex; align-items:center; justify-content:center; background:#e8dccc; border-radius:25px; font-size:2rem;">❓</div>`;
+
+        if (selectedAzucar) previewAzucarDiv.innerHTML = azucaresSVG[selectedAzucar];
+        else previewAzucarDiv.innerHTML = `<div style="width:110px; height:110px; display:flex; align-items:center; justify-content:center; background:#e8dccc; border-radius:25px; font-size:2rem;">❓</div>`;
+
+        addBtn.disabled = !(selectedCafe && selectedAzucar);
+    }
+
+    // ANIMACIÓN GRANDE: el azúcar cae dentro de la taza
+    function animarAzucarCayendo(tipoAzucar) {
+        const tazaElement = document.getElementById('previewTaza');
+        const azucarElement = document.getElementById('previewAzucar');
+        if (!tazaElement || !azucarElement) return;
+
+        azucarElement.classList.add('inclinar-azucar');
+        
+        const tazaSvg = tazaElement.querySelector('svg');
+        if (tazaSvg) {
+            tazaSvg.classList.add('taza-sacudiendo');
+            setTimeout(() => tazaSvg.classList.remove('taza-sacudiendo'), 550);
+        }
+        
+        const tazaRect = tazaElement.getBoundingClientRect();
+        const azucarRect = azucarElement.getBoundingClientRect();
+        
+        const origenX = azucarRect.left + azucarRect.width * 0.7;
+        const origenY = azucarRect.top + azucarRect.height * 0.55;
+        const destinoX = tazaRect.left + tazaRect.width * 0.5;
+        const destinoY = tazaRect.top + tazaRect.height * 0.7;
+        
+        const colorClase = tipoAzucar === 'Blanco' ? 'blanco' : 'moreno';
+        
+        // 60 partículas grandes para una cascada espectacular
+        for (let i = 0; i < 65; i++) {
+            const particula = document.createElement('div');
+            const tamaño = Math.random();
+            let tamañoClase = '';
+            if (tamaño < 0.3) tamañoClase = ' small';
+            else if (tamaño > 0.7) tamañoClase = ' medium';
+            
+            particula.className = `particula-azucar ${colorClase}${tamañoClase}`;
+            
+            const randomOffsetX = (Math.random() - 0.5) * 38;
+            const randomOffsetY = (Math.random() - 0.5) * 28 + (Math.random() * 20);
+            
+            const deltaX = (destinoX - origenX) + randomOffsetX;
+            const deltaY = (destinoY - origenY) + randomOffsetY;
+            
+            particula.style.setProperty('--dx', deltaX + 'px');
+            particula.style.setProperty('--dy', deltaY + 'px');
+            particula.style.left = (origenX - 7) + 'px';
+            particula.style.top = (origenY - 7) + 'px';
+            
+            setTimeout(() => {
+                document.body.appendChild(particula);
+            }, i * 8);
+            
+            setTimeout(() => particula.remove(), 850);
+        }
+        
+        if (tazaSvg) {
+            tazaSvg.classList.add('taza-brillo');
+            setTimeout(() => tazaSvg.classList.remove('taza-brillo'), 450);
+        }
+        
+        const tazaContainer = tazaElement;
+        tazaContainer.classList.add('onda-taza');
+        setTimeout(() => tazaContainer.classList.remove('onda-taza'), 600);
+        
+        const mensaje = document.createElement('div');
+        mensaje.className = 'mensaje-flotante';
+        mensaje.innerHTML = `🍬 ¡AZÚCAR ${tipoAzucar.toUpperCase()} CAYENDO en ${selectedCafe}! ✨☕`;
+        document.body.appendChild(mensaje);
+        setTimeout(() => mensaje.remove(), 2200);
+        
+        setTimeout(() => {
+            azucarElement.classList.remove('inclinar-azucar');
+        }, 700);
     }
 
     function agregarCombinacion() {
         if (!selectedCafe || !selectedAzucar) return;
         
-        if (comboExiste(selectedCafe, selectedAzucar)) {
-            const textoOriginal = previewSpan.innerHTML;
-            previewSpan.innerHTML = `⚠️ ¡"${selectedCafe} con ${selectedAzucar}" ya existe!`;
-            setTimeout(() => {
-                if (selectedCafe && selectedAzucar) previewSpan.innerHTML = `${selectedCafe} + ${selectedAzucar}`;
-                else previewSpan.innerHTML = '—';
-            }, 1200);
+        if (userCombos.some(c => c.cafe === selectedCafe && c.azucar === selectedAzucar)) {
+            const msg = document.createElement('div');
+            msg.className = 'mensaje-flotante';
+            msg.innerHTML = `⚠️ La combinación "${selectedCafe} + ${selectedAzucar}" ya existe. ¡Son solo 6 formas!`;
+            msg.style.background = '#a1451e';
+            document.body.appendChild(msg);
+            setTimeout(() => msg.remove(), 2000);
             return;
         }
         
-        const nuevaCombo = {
-            cafe: selectedCafe,
-            azucar: selectedAzucar,
-            texto: comboTexto(selectedCafe, selectedAzucar)
-        };
-        userCombos.push(nuevaCombo);
-        renderizarCombos();
+        animarAzucarCayendo(selectedAzucar);
         
-        // Feedback visual
-        previewSpan.innerHTML = `✅ ¡Agregado! (${selectedCafe} + ${selectedAzucar})`;
         setTimeout(() => {
-            if (selectedCafe && selectedAzucar) previewSpan.innerHTML = `${selectedCafe} + ${selectedAzucar}`;
-            else previewSpan.innerHTML = '—';
-        }, 900);
-        actualizarBotonAgregar();
+            userCombos.push({ cafe: selectedCafe, azucar: selectedAzucar });
+            renderizarCombos();
+            
+            previewAzucarDiv.innerHTML = `<div style="font-size:1.2rem; background:#6f9e7c; color:white; padding:0.6rem 1.2rem; border-radius:50px;">✅ ¡Azúcar añadido!</div>`;
+            setTimeout(() => {
+                if (selectedAzucar) previewAzucarDiv.innerHTML = azucaresSVG[selectedAzucar];
+                else previewAzucarDiv.innerHTML = `<div style="width:110px; height:110px; display:flex; align-items:center; justify-content:center; background:#e8dccc; border-radius:25px; font-size:2rem;">❓</div>`;
+            }, 1500);
+        }, 600);
+    }
+
+    function renderizarCombos() {
+        combosContainer.innerHTML = '';
+        if (userCombos.length === 0) {
+            combosContainer.innerHTML = '<div style="color: #b28b65; width: 100%; text-align: center; padding: 1rem; font-size:1.1rem;">✨ Selecciona café y azúcar, luego haz clic en "Agregar" para ver el AZÚCAR CAER GRANDE dentro ✨</div>';
+            counterSpan.innerText = '0';
+            return;
+        }
+        
+        userCombos.forEach((combo, idx) => {
+            const div = document.createElement('div');
+            div.className = 'combo-item';
+            div.innerHTML = `
+                <div class="combo-visual">
+                    ${tazasSVG[combo.cafe]}
+                    <span style="font-size:1.3rem;">+</span>
+                    ${azucaresSVG[combo.azucar]}
+                </div>
+                <div class="combo-texto">${combo.cafe} con azúcar ${combo.azucar}</div>
+                <button class="btn-eliminar" data-idx="${idx}">✕</button>
+            `;
+            combosContainer.appendChild(div);
+        });
+        
+        counterSpan.innerText = userCombos.length;
+        
+        document.querySelectorAll('.btn-eliminar').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const idx = parseInt(btn.getAttribute('data-idx'));
+                userCombos.splice(idx, 1);
+                renderizarCombos();
+            });
+        });
+    }
+
+    function limpiarSeleccion() {
+        selectedCafe = null;
+        selectedAzucar = null;
+        actualizarUI();
     }
 
     function reiniciarTodas() {
-        if (userCombos.length > 0 && confirm('¿Reiniciar todas las combinaciones? Se perderá tu progreso.')) {
+        if (userCombos.length > 0 && confirm('¿Reiniciar todas las combinaciones?')) {
             userCombos = [];
             renderizarCombos();
             limpiarSeleccion();
@@ -663,31 +898,13 @@ font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Poppins', sans-seri
         }
     }
 
-    // Eventos
-    cafeBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const cafe = btn.getAttribute('data-cafe');
-            selectedCafe = (selectedCafe === cafe) ? null : cafe;
-            actualizarEstilosActivos();
-            actualizarPreviewYBoton();
-        });
-    });
-    
-    azucarBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const azucar = btn.getAttribute('data-azucar');
-            selectedAzucar = (selectedAzucar === azucar) ? null : azucar;
-            actualizarEstilosActivos();
-            actualizarPreviewYBoton();
-        });
-    });
-    
     addBtn.addEventListener('click', agregarCombinacion);
     clearBtn.addEventListener('click', limpiarSeleccion);
     resetAllBtn.addEventListener('click', reiniciarTodas);
-    
-    // Inicializar
-    limpiarSeleccion();
+
+    crearBotonesCafe();
+    crearBotonesAzucar();
+    actualizarUI();
     renderizarCombos();
 </script>
 </body>
